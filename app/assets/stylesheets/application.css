@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.alert {
+    padding:  15px ;
+    margin-bottom:  20px ;
+    border:  1px  solid transparent ;
+    border-radius:  4px ;
+    opacity:  100 ;
+    width:  4fr ;
+    height: 20px;
+} 
+
+.alert-success {
+    background-color:  #dff0d8 ;
+    border-color:  #d6e9c6 ;
+    color:  #3c763d ;
+} 
+
+.alert-danger {
+    background-color:  #f2dede ;
+    border-color:  #ebccd1 ;
+    color:  #a94442 ;
+}
+
+.alert-fade {
+    opacity: 1;
+    width:  4fr ;
+    height: 20px;
+    animation-name: fadeOut;
+    animation-duration: 0.1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
